@@ -1,7 +1,7 @@
 // Declare a fixed budget
 
 const fixedBudget = 100;
-let expense = 40;
+let expense = 0;
 
 // creating an object spending
 
@@ -13,11 +13,15 @@ const spending = {
 // writting the get remainig method
 
 const getRemainig = function(){
+
+    expenseInput.value = "";
     return document.getElementById("remainingDisplay").innerHTML = "Remainig:" + "$" + (fixedBudget - expenseInput.value)  ;
 }
 
 function addExpense(){
+
     return document.getElementById("expenseDisplay").innerHTML = "spent:" + "$" + expenseInput.value ;
+
 }
 
 spending.expense = document.getElementById("expenseDisplay");
@@ -40,7 +44,7 @@ expenseBtn.addEventListener('click',
         updateDisplay();
     }
 )
-// console.log(spending);
+console.log(spending);
 
 
 // writting the update display

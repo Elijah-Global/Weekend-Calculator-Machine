@@ -2,11 +2,22 @@
     text-align: center;
     margin-top: 50px;
     font-family: Arial, sans-serif;
+    border: 3px solid green;
+    width: 40%;
+    margin: 30px auto;
+   
 }
 
-input {
+input{
     padding: 5px;
     margin: 10px;
+    border-radius: 7px;
+     outline: none;
+    border: 1px solid green;
+}
+input:focus{
+    background-color: rgb(159, 156, 152);
+    border: 0;
 }
 
 button {
@@ -14,4 +25,5 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 7px;
 }
