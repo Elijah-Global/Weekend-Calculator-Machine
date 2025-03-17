@@ -40,12 +40,12 @@ expenseBtn.addEventListener('click',
         updateDisplay();
     }
 )
-console.log(spending);
+// console.log(spending);
 
 
 // writting the update display
 function updateDisplay(){
-    return document.getElementById("updateDisplay").innerHTML = "the budget is " + spending.budget + " the expenses is $" + expenseInput.value + "and the budget " + getRemainig();
+    return document.getElementById("updateDisplay").innerHTML = "The budget is " + spending.budget + " the expenses is $" + expenseInput.value + "and the budget " + getRemainig();
 }
 
 
